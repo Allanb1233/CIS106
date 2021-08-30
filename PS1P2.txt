@@ -1,0 +1,10 @@
+# compute the average of two exams from a last Name
+
+last_name = (input("Enter your last name: "))
+ex1 = float(input("Enter the first exam score: "))
+ex2 = float(input("Enter the second exam score: "))
+
+avg_score = ((ex1 + ex2) / 2)
+
+print("Last name: ", last_name)
+print("the average of two exam scores: ", avg_score)
