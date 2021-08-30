@@ -1,0 +1,8 @@
+# Compute the amount of a meal's tip
+amtofmeal = float(input("Enter the amount of the meal: $ "))
+
+# process phase
+
+tip = 0.15 * amtofmeal
+# output phase
+print ("Tip is: $", tip)
