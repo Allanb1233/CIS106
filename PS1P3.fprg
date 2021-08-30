@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-29 10:28:24 PM"/>
+        <attribute name="created" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMDgtMjk7MTA6MjU6MDcgUE07Mjg0MA=="/>
+        <attribute name="edited" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMDgtMjk7MTA6Mjg6MjQgUE07MTsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gallons" type="Real" array="False" size=""/>
+            <declare name="milestravelled" type="Real" array="False" size=""/>
+            <declare name="mpg" type="Real" array="False" size=""/>
+            <input variable="gallons"/>
+            <input variable="milestravelled"/>
+            <assign variable="mpg" expression="gallons/milestravelled"/>
+            <output expression="&quot;miles per gallon is&quot; &amp; mpg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
