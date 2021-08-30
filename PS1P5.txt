@@ -1,0 +1,13 @@
+# compute tax and total
+amtofitem = float(input("Enter amount of the item "))
+
+# Process phase
+
+tax = amtofitem * 0.07
+total = tax + amtofitem
+
+# output phase
+print ("Amount entered: $", amtofitem)
+print ("Tax is:         $", tax)
+print ("Total Order:    $", total)
+

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-29 06:51:41 PM"/>
+        <attribute name="created" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMDgtMjk7MDY6MzY6NDkgUE07Mjg1Mw=="/>
+        <attribute name="edited" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMDgtMjk7MDY6NTE6NDEgUE07MTsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amtofitem" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of an item&quot;" newline="True"/>
+            <input variable="amtofitem"/>
+            <assign variable="tax" expression="amtofitem * 0.07"/>
+            <assign variable="total" expression="amtofitem + tax"/>
+            <output expression="&quot;Amount of the item &quot; &amp; amtofitem" newline="True"/>
+            <output expression="&quot;Tax is &quot; &amp; tax" newline="True"/>
+            <output expression="&quot;Total order &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
