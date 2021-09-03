@@ -1,0 +1,9 @@
+#display lastname and tuition
+lastname = str(input("Enter your last name "))
+credits = float(input("Enter the amount of credits taken "))
+#Process
+#250 per credit hour and 100 dollar fee for lab
+tuition = credits * 250 + 100
+#output
+print ("Tuition total for ", lastname)
+print ("Tuition total is", tuition)
