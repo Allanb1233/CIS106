@@ -1,0 +1,7 @@
+#display the extended price 
+quantity = float(input("Enter the quantity " ))
+priceperunit = float(input("Enter the price per unit "))
+#process
+extendedprice = quantity * priceperunit
+#output
+print ("The extended price is " ,extendedprice)
