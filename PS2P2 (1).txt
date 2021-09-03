@@ -1,0 +1,10 @@
+# disply last name and gross pay
+lastname = str(input("Enter your last name "))
+hours = float(input("Enter the amount of hours of work "))
+payrate = float(input("Enter the payrate "))
+
+#process
+grosspay = hours * payrate
+#output
+print ("Last name is ",lastname)
+print ("Grosspay is ",grosspay)
