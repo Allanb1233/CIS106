@@ -1,0 +1,9 @@
+#displaythe area and circumference
+lenght = float(input("Enter the lenght of the rectangle "))
+width = float(input("Enter the width of the triangle "))
+#Process
+area = lenght * width
+circumference = 2 * lenght + 2 * width
+#output
+print ("The area is ", area)
+print ("The circumference is ", circumference)
