@@ -1,0 +1,9 @@
+#compute the discount amount and discounted price of item
+priceofitem = float(input("Enter the price for item "))
+discountpercent = float(input("Enter the discount percent "))
+#Process
+discountamount = priceofitem * discountpercent
+discountedpriceofitem = priceofitem - discountamount
+#output
+print ("The discounted amount is ", discountamount)
+print ("The final amount of item with discount is ", discountedpriceofitem)
