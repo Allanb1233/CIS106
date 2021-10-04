@@ -1,0 +1,24 @@
+counter = 0
+totalgrosspay = 0
+response = input("Do you want to compute your gross pay? ")
+
+while response == "Yes":
+  counter = counter + 1
+  lastname = input("Enter your last name: ")
+  hours = int(input("Enter hours worked: "))
+  rate = float(input("Enter your rate of pay: "))
+  if hours > 40:
+   ot = (hours - 40) * rate
+   otpay = ot * 1.5
+   gpay = (40 * rate) + otpay
+  else:
+    gpay = hours * rate
+  totalgrosspay = totalgrosspay + gpay
+  avgpay = totalgrosspay / counter
+  print("Last Name: ",lastname)
+  print("Gross Pay : ",gpay)
+  response = input("Do you want to compute your gross pay again? ")
+
+print("The sum of all the pay is ", totalgrosspay)
+print("Total Number of employees: ", counter) 
+print("The average pay is ", avgpay) 
