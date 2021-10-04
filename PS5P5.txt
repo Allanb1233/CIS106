@@ -1,0 +1,21 @@
+totaldiscount = 0
+
+ans = input("Do you want to do this program? ")
+
+while ans == "Yes":
+  qty = int(input("Enter a quantity to purchase: "))
+  price = float(input("Enter the price of the items to purchase: "))
+  extprice = qty * price
+  if extprice > 10000.00:
+    discount = extprice * 0.25
+  else:
+    discount = extprice * 0.10
+  totaldiscount = totaldiscount + discount 
+  total = extprice - discount
+
+  print("Extended Price: ",extprice)
+  print("Discount Amount: ",discount)
+  print("New Total is ",total)
+  ans = input("Do you want to do the program again? ")
+
+print("Total Discount: ",totaldiscount)
