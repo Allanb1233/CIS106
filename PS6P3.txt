@@ -1,0 +1,18 @@
+f = open ("data.txt", "r")
+
+lastname = f.readline()
+total_bonus = 0 
+while lastname != "":
+  salary = float(f.readline())
+  if salary >=100000:
+    bonus = salary * 0.2
+  elif salary >= 50000:
+    bonus = salary * 0.15
+  else:
+    bonus = salary * 0.15
+  total_bonus = total_bonus + bonus
+  print(lastname)
+  print(salary)
+  print(bonus)
+  lastname = f.readline()
+print(total_bonus)       
