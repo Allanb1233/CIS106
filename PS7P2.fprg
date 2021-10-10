@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 06:38:16 PM"/>
+        <attribute name="created" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMTAtMTA7MDY6MjE6MTQgUE07MjgyMg=="/>
+        <attribute name="edited" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMTAtMTA7MDY6Mzg6MTYgUE07MTsyOTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="hits" type="Real" array="False" size=""/>
+            <declare name="bats" type="Real" array="False" size=""/>
+            <declare name="batavg" type="Real" array="False" size=""/>
+            <output expression="&quot;What is the last name? &quot;" newline="True"/>
+            <input variable="lastname"/>
+            <output expression="&quot;How many hits? &quot;" newline="True"/>
+            <input variable="hits"/>
+            <output expression="&quot;How many at bats? &quot;" newline="True"/>
+            <input variable="bats"/>
+            <call expression="batavg(hits,bats)"/>
+            <assign variable="batavg" expression="batavg(hits,bats)"/>
+            <output expression="lastname" newline="True"/>
+            <output expression="&quot;Batting average is &quot; &amp; batavg" newline="True"/>
+        </body>
+    </function>
+    <function name="batavg" type="Real" variable="batavg">
+        <parameters>
+            <parameter name="hits" type="Real" array="False"/>
+            <parameter name="bats" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="batavg" type="Real" array="False" size=""/>
+            <assign variable="batavg" expression="hits / bats"/>
+        </body>
+    </function>
+</flowgorithm>
