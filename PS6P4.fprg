@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 03:23:02 PM"/>
+        <attribute name="created" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMTAtMTA7MDM6MDY6MTIgUE07MjgyMA=="/>
+        <attribute name="edited" value="YWxsYW47REVTS1RPUC03Q0YzTzRQOzIwMjEtMTAtMTA7MDM6MjM6MDIgUE07MTsyOTI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="avgorder" type="Real" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <declare name="response" type="String" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <output expression="&quot;Do you want to do this program? (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <output expression="&quot;Enter item &quot;" newline="True"/>
+                <input variable="item"/>
+                <output expression="&quot;Enter quantity&quot;" newline="True"/>
+                <input variable="qty"/>
+                <output expression="&quot;Enter price&quot;" newline="True"/>
+                <input variable="price"/>
+                <assign variable="extprice" expression="qty * price"/>
+                <assign variable="c" expression="c + 1"/>
+                <assign variable="total" expression="total + extprice"/>
+                <output expression="&quot;Item is &quot; &amp; item" newline="True"/>
+                <output expression="&quot;Extended price is &quot; &amp; extprice" newline="True"/>
+                <output expression="&quot;Do you want to do this program again? (Yes or No) &quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+            <assign variable="avgorder" expression="total / c"/>
+            <output expression="&quot;Average order is &quot; &amp; avgorder" newline="True"/>
+            <output expression="&quot;Total of all orders &quot; &amp; total" newline="True"/>
+            <output expression="&quot;Number of orders &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
