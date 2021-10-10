@@ -1,0 +1,25 @@
+f = open("data.txt", "r")
+c = 0
+total = 0.0
+lastname = f.readline()
+
+while lastname != "":
+  code = f.readline()
+  numbercredits = float(f.readline())
+ 
+  if code == "I\n":
+    owed = numbercredits * 250.00
+  else:
+    owed = numbercredits * 500.00
+
+  c = c + 1
+  total = total + owed
+  print(lastname)
+  print("Credits taken is ", numbercredits)
+  print("Tuition owed is ", owed)
+  lastname = f.readline()
+
+
+
+print("Total Tuition is ", total)
+print("The number of students is ", c)

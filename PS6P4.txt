@@ -1,0 +1,25 @@
+count = 0
+total = 0
+f = open ("data.txt", "r")
+
+
+item = str(f.readline())
+while item != "":
+  quantity = int(f.readline())
+  price = int(f.readline())
+
+  extprice = quantity * price
+  
+  print("Item is ",item)
+  print("Quantity is ",quantity)
+  print("The price is ",price)
+  print("The extended price is ",extprice)
+  total = total + extprice
+  count = count + 1
+  item = str(f.readline())
+
+avgorder = total / count
+
+print("The sum of all the extended prices is ", total)
+print("The count of number of orders ", count)
+print("The average order is ", avgorder)
