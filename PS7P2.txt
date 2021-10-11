@@ -1,0 +1,10 @@
+def average(n, h, b): 
+  a = (h / b) 
+  print("Name: ", n) 
+  print("Average: ", a) 
+
+def number(x): 
+  x = int(x) 
+  return x 
+
+average(input("Name: "), number(input("Enter hits: ")), number(input("Enter bats: "))) 
