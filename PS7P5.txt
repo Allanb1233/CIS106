@@ -1,0 +1,19 @@
+def tuition_total(h, d): 
+  if d == "I": 
+    total = h * 250 
+    return total 
+  elif d == "O": 
+    total = h * 550 
+    return total 
+  else: 
+    print("Invalid")
+
+def number(x): 
+  x = int(x) 
+  return x 
+
+name = input("Enter Last name: ") 
+code = input("District code: ") 
+hours = number(input("Credit hours: ")) 
+print(name) 
+print(tuition_total(hours, code))
