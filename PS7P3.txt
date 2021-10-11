@@ -1,0 +1,21 @@
+def milespergallon(miles,gall):
+  mpg = miles / gall
+  return mpg
+
+def cost(gall):
+  cpg = gall * 2.50
+  return cpg
+
+def number(x):
+  x = int(x)
+  return x
+
+
+city = input("Please enter city name ")
+milest = float(input("Enter miles traveled "))
+gall = float(input("Enter gallons used "))
+
+print("City name is ", city)
+print("miles travelled: ", milest)
+print("Cost of gas is ", (cost(gall)))
+
