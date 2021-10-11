@@ -1,0 +1,27 @@
+def payrate(c): 
+  if c == "L": 
+    rate = 25 
+    return rate 
+  elif c == "A": 
+    rate = 30 
+    return rate 
+  elif c == "J": 
+    rate = 50 
+    return rate 
+  else: 
+    print("Invalid") 
+
+def gross_pay(r, h): 
+  p = r * h 
+  return p
+
+def number(x): 
+  x = int(x) 
+  return x 
+
+name = input("Enter Last name: ") 
+code = input("Job code: ") 
+hours = number(input(" Hours: ")) 
+
+print(name) 
+print(gross_pay(payrate(code), hours)) 
