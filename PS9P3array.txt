@@ -1,0 +1,42 @@
+def displaynames(lastn,score):
+  for i in lastn:
+    print(i)
+  for y in score:
+    print(y)
+  l = len(lastn)
+  for x in range(0,l,1):
+    print(x, " ", lastn[x], " ", score[x])  
+
+def hilow(lastn,score):
+  l = len(lastn)
+  hiscore = -1.0
+  lowscore =99999999.99
+  for y in range (0,l,1):
+    if float(score[y]) > float(hiscore):
+      hiindex = y
+      hiscore = score[y]
+    
+    if float(score[y]) < float(lowscore):
+      loindex = y
+      lowscore = score[y]
+  
+  print("Highest score", lastn[hiindex], score[hiindex])
+  print("Lowest score", lastn[loindex], score[loindex])
+
+
+f = open("lnames.txt", "r")
+
+lastn = []
+score = []
+
+lastname = f.readline()
+
+while lastname != "":
+  lastn.append(str(lastname).rstrip("\n"))
+  s = float(f.readline())
+  score.append(s)
+  lastname = f.readline()
+
+f.close()
+displaynames(lastn,score)
+hilow(lastn, score)
