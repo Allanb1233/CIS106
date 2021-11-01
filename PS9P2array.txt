@@ -1,0 +1,26 @@
+def displaynames(lastn,score):
+  for i in lastn:
+    print(i)
+  for y in score:
+    print(y)
+  l = len(lastn)
+  for x in range(0,l,1):
+    print(x, " ", lastn[x], " ", score[x])  
+
+
+f = open("lnames.txt", "r")
+
+lastn = []
+score = []
+
+lastname = f.readline()
+
+while lastname != "":
+  lastn.append(str(lastname).rstrip("\n"))
+  s = float(f.readline())
+  score.append(s)
+  lastname = f.readline()
+
+f.close()
+displaynames(lastn,score)
+
