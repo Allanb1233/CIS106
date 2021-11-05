@@ -1,0 +1,22 @@
+def measurement (l, w, h):
+  squarefootage = ((2 * l * w) + (2 * l * h) + (2 * w * h))
+  
+  gallons = squarefootage / 50
+
+  return gallons
+
+
+
+response = input("Would you like to compute program? ")
+
+while response == "Yes":
+  l = int(input("Enter the lenght of the room: "))
+  w = int(input("Enter the width of the room: "))
+  h = int(input("Enter the height of the room: "))
+
+  squarefootage = measurement (l, w, h)
+  
+  gallons = measurement (l, w, h)
+
+  print("Gallons needed to paint room: ", gallons)
+  response = input("Would you like to compute again? ")
