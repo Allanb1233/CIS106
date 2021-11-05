@@ -1,0 +1,26 @@
+def nextmonthsales (m, sales):
+  if m == "1" or m == "2" or m == "3":
+    percent = 0.10
+  elif m == "4" or m == "5" or m == "6":
+    percent = 0.15
+  elif m == "7" or m == "8" or m == "9":
+    percent = 0.20
+  else: 
+    percent = 0.25
+  
+  forecastsales = (sales * (1 + percent))
+
+  return forecastsales
+
+
+response = input("Would you like to compute program? ")
+
+while response == "Yes":
+  lastname = input("Enter your last name: ")
+  m = int(input("Enter months in terms of numbers: "))
+  sales = float(input("Enter the amount sales: "))
+  
+  forecastsales = nextmonthsales (m, sales)
+  
+  print("Next Month's Sales: ", forecastsales)
+  response = input("Would you like to compute again? ")
