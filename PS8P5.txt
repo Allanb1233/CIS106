@@ -1,0 +1,26 @@
+def assessedvalue (c, mvalue):
+  if c == "Cook":
+    percent = .90
+  elif c == "DuPage":
+    percent = .80
+  elif c == "McHenry":
+    percent = .75
+  elif c == "Kane":
+    percent = .60
+  else:
+    percent = .70
+
+  totalprice = (mvalue * percent)
+
+  return totalprice
+
+response = input("Would you like to compute? ")
+while response == "yes":
+  c = str(input("Enter county: "))
+  mvalue = float(input("Enter market value: "))
+
+  totalprice = assessedvalue (c, mvalue)
+
+  print("Assessed Value: ", totalprice)
+
+  response = input("Would you like to compute again? ")
