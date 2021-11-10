@@ -1,0 +1,18 @@
+def comptotal(qty, price, discount):
+  total = float(qty) * float(price)
+  discountamount = float(total) * discount
+  discountprice = float(total) - discountamount
+
+
+
+  
+  return total, discountamount, discountprice
+
+qty = float(input("Enter Quantity: "))
+price = float(input("Enter Price: "))
+discount = float(input("Enter Discount Amount in Percentage: "))
+total, discountamount, discountprice = comptotal(qty,price, discount)
+print("Quantity is ", qty)
+print("The price is $", price)
+print("The discounted amount is $", discountamount)
+print("The final price with discount is $", discountprice)
