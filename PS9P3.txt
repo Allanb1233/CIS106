@@ -1,0 +1,19 @@
+def comptotal(sales):
+  if sales > 100000.00:
+    comission = 0.10 * sales
+  else:
+    comission = 0.05 * sales
+
+  nextyear = sales * 0.05
+
+  return comission, nextyear
+
+
+name = str(input("Enter last name "))
+sales = float(input("Enter sales "))
+
+comission, nextyear = comptotal(sales)
+
+print("Salesperson: ", name)
+print("Comission is ", comission)
+print("Next Years Target is ", nextyear)
