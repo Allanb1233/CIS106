@@ -1,0 +1,24 @@
+def outthedoorprice (m, msrp):
+  if m == "Honda Accord":
+    percent = .10
+  elif m == "Toyota Rav4":
+    percent = .15
+  elif m == "Y":
+    percent = .30
+  else:
+   percent = .05
+
+  totalprice = (msrp - (msrp * percent) + (msrp * .07))
+
+  return totalprice
+
+response = input("Would you like to compute? ")
+while response == "yes":
+  msrp = float(input("Enter MSRP: "))
+  m = str(input("Enter car code: "))
+
+  totalprice = outthedoorprice (m, msrp)
+
+  print("Total amount: ", totalprice)
+
+  response = input("Would you like to compute again? ")
