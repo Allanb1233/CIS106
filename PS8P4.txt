@@ -1,0 +1,24 @@
+def trainticketp (m):
+  if m >= 30:
+    price = 12
+  elif m >= 20:
+    price = 10
+  elif m >= 10:
+    price = 8
+  else:
+    price = 5
+
+  totalprice = (price)
+
+  return totalprice
+
+response = input("Would you like to compute? ")
+while response == "yes":
+  lastname = input("Enter last name")
+  m = int(input("Enter miles: "))
+
+  totalprice = trainticketp (m)
+
+  print("Total amount: ", totalprice)
+
+  response = input("Would you like to compute agian? ")
