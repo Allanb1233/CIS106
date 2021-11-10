@@ -1,0 +1,17 @@
+def compexams(exam1, exam2, exam3):
+  total = exam1 + exam2 + exam3
+  avg = total / 3
+
+
+  return avg, total
+
+name = str(input("Enter Student's last name: "))
+exam1 = float(input("Enter the first score: "))
+exam2 = float(input("Enter the second score: "))
+exam3 = float(input("Enter the third score: "))
+
+avg, total = compexams(exam1, exam2, exam3)
+
+print("Student: ", name)
+print("Total Points is ", total)
+print("Average Exam Score is ", avg)
