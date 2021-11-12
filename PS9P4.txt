@@ -1,0 +1,21 @@
+def compscore(game1, game2, game3):
+  total = float(game1 + game2 + game3)
+  
+  handicapavg = (200 - total) * 0.90
+
+  avg = float(total) / 3
+
+  return handicapavg, avg
+
+
+name = str(input("Enter name: "))
+game1 = float(input("Enter game 1: "))
+game2 = float(input("Enter game 2: "))
+game3 = float(input("Enter game 3: "))
+
+
+handicapavg, avg = compscore(game1,game2,game3)
+
+print("Last name: ", name)
+print("Average score is ", avg)
+print("Average score with handicap is ", handicapavg)
