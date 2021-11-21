@@ -1,0 +1,65 @@
+#1
+def dl1 (mylist):
+  n = int(input("Number of items in a list:  "))
+  for n in range(0,n,1):
+    s = int(input("Enter an integer:  "))
+    mylist.append(s)
+  return mylist
+def displaylist(mylist):
+  for item in mylist:
+    print(item)
+
+mylist = []
+mylist = dl1(mylist)
+displaylist(mylist)
+print(mylist)
+#2
+mylist.insert(0,99)
+print(mylist)
+#3
+mylist[0] = 100
+print(mylist)
+#4
+mylist2 = [500, 600, 700, 800, 900]
+mylist3 = [100, 200, 300, 400, 450]
+mylist2.extend(mylist3)
+print(mylist2)
+#5
+mylist2.remove(800)
+print(mylist2)
+#6
+mylist.remove(3)
+print(mylist)
+#7
+mylist4 = ["A", "B", "C", "A", "A", "C"]
+print(mylist4)
+#8
+print("Count the number of A grade is  ", mylist4.count("A"))
+#9
+print("The position of the first B grade is  ", mylist4.index("B"))
+#10
+print("There are  " + str(mylist4.count("F")) + " F grades in the list")
+#11
+mylist8 = [1, 6, 9, 4]
+mylist9 = [5, 20, 7, 1]
+mylist9.clear()
+print(mylist9)
+#12
+mylist8 = [1, 6, 9, 4]
+mylist9 = [5, 20, 7, 1]
+mylist9.delete()
+print(mylist9)
+#13
+players1 = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+print(players1)
+#14
+players1 = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+players1.sort()
+print(players1)
+#15
+players2 = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+print(players2)
+#16
+players2 = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+players2.reverse()
+print(players2)
