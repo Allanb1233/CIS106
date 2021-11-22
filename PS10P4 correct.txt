@@ -1,0 +1,25 @@
+def battingaverage(lastn,bata):
+  for i in lastn:
+    print(i)
+  for y in bata:
+    print(y)
+  l = len(lastn)
+  for x in range(0,l,1):
+    print(x, "", lastn[x],"", bata[x])
+
+
+f = open("lnames.txt","r")
+
+lastn = []
+bata = []
+
+lastname = f.readline()
+
+while lastname != "":
+  lastn.append(s)
+  lastname = f.readline()
+
+
+
+f.close()
+battingaverage(lastn,bata)

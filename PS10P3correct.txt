@@ -1,0 +1,36 @@
+def displaynamesh(lastnh,scoreh):
+  for i in lastnh:
+    print(i)
+  for y in scoreh:
+    print(y)
+  l = len(lastnh)
+  for x in range(0,l,1):
+    print(x, "", lastnh[x],"", scoreh[x])
+
+def displaynamesl(lastnl,scorel):
+  for i in lastnl:
+    print(i)
+  for y in scorel:
+    print(y)
+  l = len(lastnl)
+  for x in range(0,l,999):
+    print(x, "", lastnl[x],"", scorel[x])
+
+f = open("lnames.txt","r")
+
+lastnh = []
+scoreh = []
+lastnl = []
+scorel = []
+
+lastname = f.readline()
+
+while lastname != "":
+  lastnh.append(s)
+  lastname = f.readline()
+
+
+
+f.close()
+displaynamesh(lastnh,scoreh)
+displaynamesl(lastnl,scorel)
