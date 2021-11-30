@@ -1,0 +1,16 @@
+
+def printName(fname, lname):
+    print(lname.strip() + ", " + fname[0] + ".")
+
+
+name = input ("Enter Name: ")
+nameSplit = name.split()
+print(nameSplit)
+
+if len(nameSplit) == 2:
+    fname = nameSplit[0]
+    lname = nameSplit[1]
+    printName(fname, lname)
+else:
+    print("Incomplete Name")
+    

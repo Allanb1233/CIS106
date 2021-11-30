@@ -1,0 +1,18 @@
+def reverseStr(strS):
+    for i in range(0, len(strS)):
+        strS[i] = strS[i][::-1]
+    return strS
+
+
+def printReversed(strR):
+    strRev = strR[::-1]
+    for i in range(0, len(strRev)):
+        print(strRev[i], end = " ")
+    print()
+
+
+strInput = input ('Enter String: ')
+strSplit = strInput.split()
+strSplitReversed = reverseStr(strSplit)
+print(strInput)
+printReversed(strSplitReversed)

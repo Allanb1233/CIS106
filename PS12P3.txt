@@ -1,0 +1,8 @@
+def printStringSplit(strS):
+    for i in range(0, len(strS)):
+        temp2 = strS[i].strip()
+        print(temp2)
+
+strInput = input ("Enter Comma-Seperated-Values: ")
+strSplit = strInput.split(",")
+printStringSplit(strSplit)
