@@ -11,7 +11,7 @@ class Employee:
     return b
 
 
-emp_1 = Employee('Patrick', 'Rajchel', 60000)
+emp_1 = Employee('Allan', 'Blanco', 60000)
 
 print(emp_1.email)
 print(emp_1.first)
